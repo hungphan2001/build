@@ -17,10 +17,10 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 # Add User
 # Why? Well for avoid something wrong
 # I've seen some notes for not using root when build
-RUN useradd -ms /bin/bash doraemon
+RUN useradd -ms /bin/bash hungphan2001
 RUN echo "hungphan2001 ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-USER doraemon
-WORKDIR /home/doraemon
+USER hungphan2001
+WORKDIR /home/hungphan2001
 
 # Git
 RUN git config --global user.email "phandinhhungvp2001@gmail.com"
